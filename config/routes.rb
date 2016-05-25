@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   get 'startup/index'
 
-=======
-  resources :users
->>>>>>> a88adc6a32ca6713417af51ec0aaa56716b3c28e
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
