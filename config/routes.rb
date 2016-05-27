@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'actor/generate_Actor'
+
   get 'startup/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
