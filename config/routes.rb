@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :users
+
   get 'actor/generate_Actor'
 
   get 'startup/index'
