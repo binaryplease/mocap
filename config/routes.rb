@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
+  root 'startup#index'
+
   resources :users
 
-  get 'actor/generate_Actor'
-
-  get 'startup/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
