@@ -1,0 +1,81 @@
+<%= form_for(@actor) do |f| %>
+  <% if @actor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@actor.errors.count, "error") %> prohibited this actor from being saved:</h2>
+
+      <ul>
+      <% @actor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :body_height %><br>
+    <%= f.text_field :body_height %>
+  </div>
+  <div class="field">
+    <%= f.label :shoulder_width %><br>
+    <%= f.text_field :shoulder_width %>
+  </div>
+  <div class="field">
+    <%= f.label :shoulder_height %><br>
+    <%= f.text_field :shoulder_height %>
+  </div>
+  <div class="field">
+    <%= f.label :inner_leg_length %><br>
+    <%= f.text_field :inner_leg_length %>
+  </div>
+  <div class="field">
+    <%= f.label :tibia_length %><br>
+    <%= f.text_field :tibia_length %>
+  </div>
+  <div class="field">
+    <%= f.label :body_depth %><br>
+    <%= f.text_field :body_depth %>
+  </div>
+  <div class="field">
+    <%= f.label :hip_width %><br>
+    <%= f.text_field :hip_width %>
+  </div>
+  <div class="field">
+    <%= f.label :seat_height %><br>
+    <%= f.text_field :seat_height %>
+  </div>
+  <div class="field">
+    <%= f.label :shoulder_elbow_length %><br>
+    <%= f.text_field :shoulder_elbow_length %>
+  </div>
+  <div class="field">
+    <%= f.label :elbow_wrist_length %><br>
+    <%= f.text_field :elbow_wrist_length %>
+  </div>
+  <div class="field">
+    <%= f.label :chest_girth %><br>
+    <%= f.text_field :chest_girth %>
+  </div>
+  <div class="field">
+    <%= f.label :waist_girth %><br>
+    <%= f.text_field :waist_girth %>
+  </div>
+  <div class="field">
+    <%= f.label :thigh_girth %><br>
+    <%= f.text_field :thigh_girth %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

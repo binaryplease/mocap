@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  weight: 1.5
+  gender: 
+  body_height: 1.5
+  shoulder_width: 
+  shoulder_height: 1.5
+  inner_leg_length: 1.5
+  tibia_length: 1.5
+  body_depth: 1.5
+  hip_width: 1.5
+  seat_height: 1.5
+  shoulder_elbow_length: 1.5
+  elbow_wrist_length: 
+  chest_girth: 1.5
+  waist_girth: 1.5
+  thigh_girth: 1.5
+
+two:
+  name: MyString
+  weight: 1.5
+  gender: 
+  body_height: 1.5
+  shoulder_width: 
+  shoulder_height: 1.5
+  inner_leg_length: 1.5
+  tibia_length: 1.5
+  body_depth: 1.5
+  hip_width: 1.5
+  seat_height: 1.5
+  shoulder_elbow_length: 1.5
+  elbow_wrist_length: 
+  chest_girth: 1.5
+  waist_girth: 1.5
+  thigh_girth: 1.5
