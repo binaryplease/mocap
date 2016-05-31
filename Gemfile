@@ -4,6 +4,9 @@ gem 'mongo'
 gem 'mongoid'
 gem 'bson'
 
+# Data migrations for Mongoid
+gem 'mongoid_rails_migrations'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
