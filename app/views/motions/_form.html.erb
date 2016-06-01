@@ -1,0 +1,57 @@
+<%= form_for(@motion) do |f| %>
+  <% if @motion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@motion.errors.count, "error") %> prohibited this motion from being saved:</h2>
+
+      <ul>
+      <% @motion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :actor %><br>
+    <%= f.text_field :actor %>
+  </div>
+  <div class="field">
+    <%= f.label :bvh_file %><br>
+    <%= f.text_field :bvh_file %>
+  </div>
+  <div class="field">
+    <%= f.label :c3d_file %><br>
+    <%= f.text_field :c3d_file %>
+  </div>
+  <div class="field">
+    <%= f.label :role %><br>
+    <%= f.text_field :role %>
+  </div>
+  <div class="field">
+    <%= f.label :mood %><br>
+    <%= f.text_field :mood %>
+  </div>
+  <div class="field">
+    <%= f.label :attribute_1 %><br>
+    <%= f.text_field :attribute_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :attribute_2 %><br>
+    <%= f.text_field :attribute_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :attribute_3 %><br>
+    <%= f.text_field :attribute_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :attribute_4 %><br>
+    <%= f.text_field :attribute_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :attribute_5 %><br>
+    <%= f.text_field :attribute_5 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
