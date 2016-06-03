@@ -39,6 +39,8 @@ GEM
     arel (6.0.3)
     autoprefixer-rails (6.3.6.1)
       execjs
+    bcrypt (3.1.11)
+    bcrypt (3.1.11-x86-mingw32)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.6)
@@ -85,6 +87,12 @@ GEM
       mongo (~> 2.1)
       origin (~> 2.2)
       tzinfo (>= 0.3.37)
+    mongoid_rails_migrations (1.1.0)
+      activesupport (>= 4.2.0)
+      bundler (>= 1.0.0)
+      mongoid (>= 4.0.0)
+      rails (>= 4.2.0)
+      railties (>= 4.2.0)
     multi_json (1.12.1)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -163,6 +171,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bcrypt
   bootstrap-sass
   bson
   byebug
@@ -171,6 +180,7 @@ DEPENDENCIES
   jquery-rails
   mongo
   mongoid
+  mongoid_rails_migrations
   rails (= 4.2.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
