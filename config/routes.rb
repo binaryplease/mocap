@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'startup#index'
 
+  get '/search', to: 'startup#search'
+
   resources :users
   resources :actors
 
