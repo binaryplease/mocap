@@ -1,5 +1,6 @@
 class User
   include Mongoid::Document
-  field :name
-  field :password
+  
+  has_secure_password
+
 end

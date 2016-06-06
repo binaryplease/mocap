@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+
   resources :motions
   root 'startup#index'
 
-  resources :users
   resources :actors
 
 
