@@ -1,0 +1,39 @@
+body{
+  padding:20px 20px;
+}
+
+.results tr[visible='false'],
+.no-result{
+  display:none;
+}
+
+.results tr[visible='true']{
+  display:table-row;
+}
+
+.counter{
+  padding:8px; 
+  color:#ccc;
+}
+
+.placeholder{
+	color: gray;
+	outline: none;
+	width: 150px;
+	border-color: lightgray;
+	border-radius: 5px 5px 5px 5px;
+	padding: 6px;
+}
+.placeholder:focus{
+	border-color: #599dc2;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(89,157,194,1);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(89,157,194,1);
+	box-shadow: 0px 0px 2px 1px rgba(89,157,194,1);
+}
+
+select option:first-child{
+	color: grey; display: none;
+}
+select option{
+	color: #555;
+} // bootstrap default color
