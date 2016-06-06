@@ -171,6 +171,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  autoprefixer-rails
   bcrypt
   bootstrap-sass
   bson
