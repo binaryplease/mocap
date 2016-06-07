@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   root 'startup#index'
 
   get '/searchDB', to: 'startup#searchDB'
-  get '/contact', to: 'startup#index'
   
+
 
   resources :users
   resources :actors
