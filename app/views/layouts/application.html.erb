@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 <html>
- <title>mocap</title>
-    <%= stylesheet_link_tag     'application', media: 'all' , 'data-tourbolinks-track' => true %>
-    <%= csrf_meta_tags %>
+<title>mocap</title>
+<%= stylesheet_link_tag     'application', media: 'all' , 'data-tourbolinks-track' => true %>
+<%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<!-- Custom CSS -->
+<link href="http://blackrockdigital.github.io/startbootstrap-grayscale/css/grayscale.css" rel="stylesheet">
+<link href="config/css/dropdown.css" rel="stylesheet">
+<title>mocap.web</title>
+<link href="config/css/search1.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <!-- Intro Header -->
-<header class="intro">
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h1 class="brand-heading">Mocap.Web</h1>
-                    <p class="intro-text">Cologne Motion Capture Database</p>
-                    <a href="#about" class="btn btn-circle page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
-                </div>
-            </div>
-            <!-- Custom CSS -->
-    <link href="http://blackrockdigital.github.io/startbootstrap-grayscale/css/grayscale.css" rel="stylesheet">
-    <link href="config/css/dropdown.css" rel="stylesheet">
 
-    <title>mocap.web</title>
-
-    <link href="config/css/search1.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        </div>
-    </div>
-</header>
 
 
 <body>
-   <!-- Navigation -->
-   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+ <!-- Navigation -->
+ <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
                    <!--  <a class="navbar-brand" href="#">
@@ -73,9 +62,9 @@
         </div>
         <!-- /.container -->
     </nav>
-  
+
 </body>
-  <%= yield %>
+<%= yield %>
 
 
 <!-- Footer -->
