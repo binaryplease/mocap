@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
   
-  resources :motions
-  root 'startup#index'
+  
+  root 'pages#index'
 
-  get '/searchDB', to: 'startup#searchDB'
+  get 'searchDB' => 'pages#searchDB'  
+  get 'index/contact' => 'pages/index#contact'  
+  get 'index/about' => 'pages/index#about' 
+  
 
   resources :users
   resources :actors
