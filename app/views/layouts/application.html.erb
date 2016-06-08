@@ -2,9 +2,8 @@
 <html>
 <title>mocap</title>
 <%= stylesheet_link_tag     'application', media: 'all' , 'data-tourbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <%= csrf_meta_tags %>
-
-
 
 <!-- Bootstrap Core CSS -->
 <link href="views/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,19 +19,16 @@
 <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-
-
 <body>
-    <%render 'navbar' %>
+	<%render 'shared/navbar' %>
 </body>
 <%= yield %>
 
-
 <!-- Footer -->
 <footer>
-    <div class="container text-center">
-        <p>Copyright &copy; TH Köln</p>
-    </div>
+	<div class="container text-center">
+		<p>Copyright &copy; TH Köln</p>
+	</div>
 </footer>
 
 </html>

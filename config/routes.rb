@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   
   
-  root 'pages#index'
+  root 'startup#index'
 
-  get 'searchDB' => 'pages#searchDB'  
-  get 'index/contact' => 'pages/index#contact'  
-  get 'index/about' => 'pages/index#about' 
+  get 'searchDB' => "startup#searchDB" 
+  get 'contact' => "startup#contact"  
+  get 'about' => "startup#about"
   
 
   resources :users
