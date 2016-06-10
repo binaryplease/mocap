@@ -1,14 +1,12 @@
 Rails.application.routes.draw do
-
-  resources :motions
+  
+  
   root 'startup#index'
 
-get 'searchDB' => "startup#searchDB" 
+  get 'searchDB' => "startup#searchDB" 
   get 'contact' => "startup#contact"  
-  get 'about' => "startup#about"  
-get 'signup' => 'users#new'
-  get 'users' => 'users#create'
-  post '/search', to: 'startup#search'
+  get 'about' => "startup#about"
+  
 
   resources :users
   resources :actors
