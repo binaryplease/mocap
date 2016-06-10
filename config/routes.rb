@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   resources :motions
   root 'startup#index'
 
-  get '/search', to: 'startup#search'
+  get 'signup' => 'users#new'
+  get 'users' => 'users#create'
+  post '/search', to: 'startup#search'
 
   resources :users
   resources :actors
