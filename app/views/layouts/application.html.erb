@@ -1,34 +1,88 @@
 <!DOCTYPE html>
 <html>
-<title>mocap</title>
-<%= stylesheet_link_tag     'application', media: 'all' , 'data-tourbolinks-track' => true %>
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-<%= csrf_meta_tags %>
 
-<!-- Bootstrap Core CSS -->
-<link href="views/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Custom CSS -->
-<link href="http://blackrockdigital.github.io/startbootstrap-grayscale/css/grayscale.css" rel="stylesheet">
-<link href="config/css/dropdown.css" rel="stylesheet">
-<title>mocap.web</title>
-<link href="config/css/search1.css" rel="stylesheet">
+<head>
+	<title>mocap</title>
 
-<!-- Custom Fonts -->
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+	<%= stylesheet_link_tag     'application', media: 'all' , 'data-tourbolinks-track' => true %>
 
-<body>
-	<%render 'shared/navbar' %>
-</body>
-<%= yield %>
 
-<!-- Footer -->
-<footer>
-	<div class="container text-center">
-		<p>Copyright &copy; TH Köln</p>
-	</div>
-</footer>
+	<%= stylesheet_link_tag 'dropdown'  %>
 
-</html>
+
+	
+	<!-- Custom CSS -->
+	<link href="http://blackrockdigital.github.io/startbootstrap-grayscale/css/grayscale.css" rel="stylesheet">
+
+
+
+	<style type="text/css">.intro{
+		background: url(/penis.jpeg) no-repeat bottom center scroll;
+		}</style>
+
+		<!-- <link href="config/css/dropdown.css" rel="stylesheet"> -->
+		<!-- <link href="config/css/search1.css" rel="stylesheet"> -->
+
+		<!-- Custom Fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+
+
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img alt="Brand" src="img/logo-bg.jpg" class="pull-left">
+					</a>
+
+
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a class="navbar-brand page-scroll" href="#page-top">
+					</a>
+				</div>
+
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+					<ul class="nav navbar-nav">
+						<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+						<li class="hidden">
+
+							<a class="page-scroll" href="/#page-top">Go to top</a>
+						</li>
+						<li class="active"><a href="searchDB">SearchDB</a></li>
+						<li>
+							<a class="page-scroll" href="/#about">About</a>
+						</li>
+
+						<li>
+							<a class="page-scroll" href="/#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
+	</body>
+	<%= yield %>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container text-center">
+			<p>Copyright &copy; TH Köln</p>
+		</div>
+	</footer>
+
+	</html>
