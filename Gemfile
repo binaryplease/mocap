@@ -4,6 +4,8 @@ gem 'mongo'
 gem 'mongoid'
 gem 'bson'
 
+gem 'tzinfo-data'
+
 # Data migrations for Mongoid
 gem 'mongoid_rails_migrations'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
