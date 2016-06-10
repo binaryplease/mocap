@@ -1,17 +1,21 @@
 Rails.application.routes.draw do
 
-	resources :motions
 	root 'startup#index'
 
 	get 'searchDB' => "startup#searchDB" 
 	get 'contact' => "startup#contact"  
 	get 'about' => "startup#about"  
 	get 'signup' => 'users#new'
-	get 'users' => 'users#create'
+	post 'users' => 'users#create'
+	get 'login' => 'sessions#new'
+	post 'login' => 'session#create'
+	delete 'logout' => 'sessions#destroy'
 	post '/search', to: 'startup#search'
+
 
 	resources :users
 	resources :actors
+	resources :motions
 
 
 	# The priority is based upon order of creation: first created -> highest priority.
