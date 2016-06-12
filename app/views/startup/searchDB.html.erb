@@ -1,4 +1,59 @@
-       <!-- Search Section -->
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                   <!--  <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="img/logo-bg.jpg" class="pull-left">
+                     </a>-->
+
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a class="page-scroll" href="#page-top">Go to top</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="file:///C:/Users/HP/Downloads/bootstrap-3.3.6-dist/bootstrap-3.3.6-dist/application.html#about">About</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#download">Search Mocaps</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="file:///C:/Users/HP/Downloads/bootstrap-3.3.6-dist/bootstrap-3.3.6-dist/application.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Intro Header -->
+        <header class="intro">
+            <div class="intro-body">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h1 class="brand-heading">Mocap.Web</h1>
+                            <p class="intro-text">Cologne Motion Capture Database</p>
+                        </div>
+                    </div>
+            </div>
+        </header>
+
+
+
+            <!-- Search Section -->
         <section id="searchbar">
             <div class="download-section">
                 <div class="col-md-12 row" id="search-section">
@@ -47,12 +102,12 @@
             </div>
         </section>
 
-        <section id="moste populer">
+        <section id="moste popular">
             <div class="container-fluid">
                <!-- Page Header -->
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>moste populer<hr>
+                        <h1>moste popular<hr>
                         </h1>
                     </div>
                 </div>
@@ -204,22 +259,7 @@
                                 </div>                                
                             </div>             
                         </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="player-box">
-                          <canvas class="emscripten player-box" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-                          <br>
-                          <div class="logo"></div>
-                          <div><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-                          <div class="title">New Unity Project</div>
-                        </div>
-                        <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pagination -->
+                         <!-- Pagination -->
         <div class="row text-center">
             <div class="col-md-12">
                 <ul class="pagination">
@@ -248,5 +288,17 @@
             </div>
         </div>
         <!-- /.row -->
-
-  <hr>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="player-box">
+                          <canvas class="emscripten player-box" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+                          <br>
+                          <div class="logo"></div>
+                          <div><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+                          <div class="title">New Unity Project</div>
+                        </div>
+                        <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
