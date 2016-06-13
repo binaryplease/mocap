@@ -9,6 +9,7 @@ Rails.application.config.assets.precompile += %w( greyscale.js )
 Rails.application.config.assets.precompile += %w( search.css )
 Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w( bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( users.css )
 
 	
 # Add additional assets to the asset load path
