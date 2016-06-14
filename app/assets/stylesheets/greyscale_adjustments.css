@@ -11,6 +11,10 @@ a:focus{
 	color: #D1464A;	
 }
 
+.content{
+	margin-top: 50px;
+}
+
 .light {
 
 	background-color: #f7f7f7;
