@@ -1,88 +1,46 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
-	<!-- Custom CSS -->
-		<!-- <link href="http://blackrockdigital.github.io/startbootstrap-grayscale/css/grayscale.css" rel="stylesheet">
-	-->
 	
-
 	<title>mocap</title>
 
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
 	<%= stylesheet_link_tag     'application', media: 'all' , 'data-tourbolinks-track' => true %>
-
-	<%= stylesheet_link_tag 'greyscale' %>	
-	<%= stylesheet_link_tag 'dropdown' %>
-	<%= stylesheet_link_tag 'search' %>
-	<%= stylesheet_link_tag 'users' %>
-	<%= stylesheet_link_tag 'sessions' %>
-	<%= stylesheet_link_tag 'greyscale_adjustments' %>
-	<%= stylesheet_link_tag 'fancybox' %>
-
-
-
 
 	<%= csrf_meta_tags %>
 
 
 
+</head>
 
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-
-
-
-	<style type="text/css">.intro{
-		background: url(/home.gif) no-repeat bottom center scroll;
-		}</style>
-
-		<!-- <link href="config/css/dropdown.css" rel="stylesheet"> -->
-		<!-- <link href="app/assets/stylesheets/search.css" rel="stylesheet"> -->
-
-		<!-- Custom Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-
-
-
-	</head>
-
-	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-		<!-- Navigation -->
-		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="/#">
-							<%= image_tag "logo.png", width:"100", alt:"TH-Köln" %>
-					</a>
+	<!-- Navigation -->
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="https://www.th-koeln.de/">
+					<%= image_tag "logo.png", width:"100", alt:"TH-Köln" %>
+				</a>
 
 
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 						<i class="fa fa-bars"></i>
-					</button>
-					<a class="navbar-brand page-scroll" href="/#page-top">
-					</a>
+					
 				</div>
-
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 					<ul class="nav navbar-nav">
 						<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-						<li class="hidden">
-
-							<a class="page-scroll" href="/#page-top">Go to top</a>
-						</li>
-						<li class="active"><a href="searchDB">SearchDB</a></li>
+						<li ><a href="searchDB">SearchDB</a></li>
 						<li>
-							<a class="page-scroll" href="/#about">About</a>
+							<a href="/#about">About</a>
 						</li>
 
 						<li>
-							<a class="page-scroll" href="/#contact">Contact</a>
+							<a  href="/#contact">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -90,8 +48,12 @@
 			</div>
 			<!-- /.container -->
 		</nav>
+
+		<div  style="padding-top:100px">
+			<%= yield %>
+		</div>
 	</body>
-	<%= yield %>
+	
 
 	<!-- Footer -->
 	<footer>

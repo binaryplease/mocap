@@ -6,7 +6,8 @@ body {
     height: 100%;
     font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: white;
-    background-color: black;
+    background-color: $backcolor;
+
 }
 
 html {
@@ -129,7 +130,7 @@ a {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url($background-url) no-repeat bottom center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
