@@ -2,3 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#session_username, #session_password, #user_username, #user_password, #user_password_confirmation {
+	background-color: black;
+}
+
+/*padding for login and signup*/
+.signup, .login {
+	padding-top: 70px;
+	padding-bottom: 300px;
+}
