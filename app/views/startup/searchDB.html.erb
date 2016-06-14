@@ -7,7 +7,7 @@
                     <form class="form-inline" action="" method="GET">
                         <div class="form-group">
                             <select class="from-control placeholder">
-                                <li class="hidden">
+                                <li class="hidden dropdown">
                                     <option value="" disabled selected>Choose Actor</option>
                                     <option>option 1</option>
                                     <option>option 2</option>
@@ -34,13 +34,15 @@
                         </div>
                         <div class="form-group">
                             <select class="from-control placeholder">
-                                <option value="" disabled selected>Choose Mood</option>
-                                <option>option 1</option>
-                                <option>option 2</option>
+                                <li class="hidden">
+                                    <option value="" disabled selected>Choose Mood</option>
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                </li>
                             </select>                          
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control placeholder" placeholder="Search for snippets" />
+                            <input type="text" class="placeholder" placeholder="Search for snippets" />
                         </div>
                         <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                     </form>
