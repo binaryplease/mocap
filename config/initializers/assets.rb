@@ -12,6 +12,7 @@ Rails.application.config.assets.precompile += %w( bootstrap.min.css )
 Rails.application.config.assets.precompile += %w( users.css )
 Rails.application.config.assets.precompile += %w( sessions.css )
 Rails.application.config.assets.precompile += %w( greyscale_adjustments.css )
+Rails.application.config.assets.precompile += %w( fancybox.css )
 
 	
 # Add additional assets to the asset load path

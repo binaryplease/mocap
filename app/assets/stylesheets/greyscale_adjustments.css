@@ -1,4 +1,7 @@
-
+body { 
+	color: #fff;
+    background-color: #545454;
+}
 
 a {
 	color: #c90c11;
@@ -10,8 +13,14 @@ a:focus{
 
 .light {
 
-	background-color: #171719;
+	background-color: #f7f7f7;
 }
+
+.navbar-default{
+       background-color:#5D5D5D
+}
+
+
 .navbar-custom .navbar-brand .navbar-toggle {
 	color: #f7f7f7;
 }
@@ -31,7 +40,7 @@ a:focus{
 .intro{
 
 	color: #f7f7f7;
-	background-color: #171719;
+	background-color: #5D5D5D;
 }
 
 @media(min-width:768px) {
@@ -62,9 +71,75 @@ a:focus{
  	color: #171719;
  	background-color: #c90c11;
  }
+ .image-logo{
+ 	width: 70px;
+ 	height: 70px;
+ }
 
 /*padding for login and signup*/
 .auth{
 	padding-top: 70px;
 	padding-bottom: 300px;
 }
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(8D8D8D);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #8D8D8D;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 6px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: rgba(255,255,255,.8);
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
