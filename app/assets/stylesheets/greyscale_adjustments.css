@@ -1,5 +1,10 @@
 
-/*
+body {
+	color: #fff;
+    background-color: #000;
+}
+
+
 a {
 	color: #c90c11;
 }
@@ -13,15 +18,15 @@ a:focus{
 	background-color: #171719;
 }
 .navbar-custom .navbar-brand .navbar-toggle {
-	color: #fcfcfc;
+	color: #f7f7f7;
 }
 
 .navbar-custom a {
-	color: #fcfcfc; 
+	color: #f7f7f7; 
 }
 
 .navbar-custom .nav li.active a:hover {
-	color: #fcfcfc;
+	color: #f7f7f7;
 }
 
 .navbar-custom.top-nav-collapse {
@@ -30,7 +35,7 @@ a:focus{
 
 .intro{
 
-	color: #fcfcfc;
+	color: #f7f7f7;
 	background-color: #171719;
 }
 
@@ -39,14 +44,14 @@ a:focus{
 }
 
 .btn-circle {
-	color: #fcfcfc;
+	color: #f7f7f7;
 }
 
 .btn-circle:focus {
-	color: #fcfcfc;
+	color: #f7f7f7;
 }
 .download-section {
-	color: #fcfcfc;
+	color: #f7f7f7;
    background-color: #171719;
 }
 .download-section {
@@ -62,4 +67,4 @@ a:focus{
  	color: #171719;
  	background-color: #c90c11;
  }
-*/
+
