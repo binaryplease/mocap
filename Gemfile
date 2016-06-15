@@ -12,7 +12,6 @@ gem 'mongoid_rails_migrations'
 gem 'rails', '4.2.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-gem 'jquery-rails'
 
 gem 'autoprefixer-rails'
 # Use Uglifier as compressor for JavaScript assets
