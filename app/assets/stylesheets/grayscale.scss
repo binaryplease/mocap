@@ -129,7 +129,7 @@ a {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: white;
+    color: $colorintro;
     background: url($background-url) no-repeat bottom center scroll;
     background-color: black;
     -webkit-background-size: cover;
@@ -165,10 +165,10 @@ a {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid white;
+    border: 2px solid $colorbutton;
     border-radius: 100% !important;
     font-size: 40px;
-    color: white;
+    color: $colorbutton;
     background: transparent;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
