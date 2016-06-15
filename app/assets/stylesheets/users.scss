@@ -1,15 +1,16 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
 
-session_username, #session_password, #user_username, #user_password, #user_password_confirmation {
-	background-color: black;
+#session_username, #session_password, .btn-submit, #user_username, #user_password, #user_password_confirmation {
+	background-color: $backcolor;
 }
 
 /*padding for login and signup*/
 .signup, .login {
-	padding-top: 70px;
-	padding-bottom: 300px;
+	padding-top: 100px;
+	padding-bottom: 200px;
 }
 
 
