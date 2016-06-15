@@ -1,13 +1,16 @@
 class Motion
   include Mongoid::Document
-  field :actor, type: Actor
-  field :bvh_file, type: File
-  field :c3d_file, type: File
-  field :role, type: String
-  field :mood, type: String
-  field :attribute_1, type: String
-  field :attribute_2, type: String
-  field :attribute_3, type: String
-  field :attribute_4, type: String
-  field :attribute_5, type: String
+  field :actor
+  field :c3d_file
+  field :bvh_file
+  field :fbx_file
+  field :role
+  field :mood
+  field :param, :type => Array
+  #Integer downloadedy
+  #Integer start
+  #Integer end
+  #String fbx_file
+  #Attribute zum Array
+ 
 end
