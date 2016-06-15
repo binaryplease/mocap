@@ -9,10 +9,7 @@
 	<%= stylesheet_link_tag     'application', media: 'all' , 'data-tourbolinks-track' => true %>
 	<%= csrf_meta_tags %>
 
-</head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-	
+</head>	
 	<!-- Custom Fonts -->
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 </head>
@@ -60,17 +57,17 @@
 				</nav>
 
 			<div  
-				style="padding-top:150px">
+				style="padding-top:110px">
 			</div>
 
-				<%= yield %>
-			</body>
+			<%= yield %>
+		</body>
 
-			<!-- Footer -->
-			<footer>
-				<div class="container text-center">
-					<p>Copyright &copy; TH Köln</p>
-				</div>
-			</footer>
+		<!-- Footer -->
+		<footer>
+			<div class="container text-center">
+				<p>Copyright &copy; TH Köln</p>
+			</div>
+		</footer>
 
-			</html>
+		</html>
