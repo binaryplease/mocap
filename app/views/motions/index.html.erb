@@ -6,9 +6,12 @@
   <thead>
     <tr>
       <th>Actor</th>
+      <th>Downloaded</th>
       <th>Bvh file</th>
       <th>C3d file</th>
       <th>FBX file</th>
+      <th>Start</th>
+      <th>End</th>
       <th>Role</th>
       <th>Mood</th>
       <th>Attribute</th>
@@ -20,9 +23,12 @@
     <% @motions.each do |motion| %>
       <tr>
         <td><%= motion.actor %></td>
+        <td><%= motion.downloaded %></td>
         <td><%= motion.bvh_file %></td>
         <td><%= motion.c3d_file %></td>
         <td><%= motion.fbx_file %></td>
+        <td><%= motion.start %></td>
+        <td><%= motion.end %></td>
         <td><%= motion.role %></td>
         <td><%= motion.mood %></td>
         <td><%= motion.param.to_sentence %></td>

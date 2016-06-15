@@ -7,10 +7,8 @@ class Motion
   field :role
   field :mood
   field :param, :type => Array
-  #Integer downloadedy
-  #Integer start
-  #Integer end
-  #String fbx_file
-  #Attribute zum Array
+  field :downloaded
+  field :start
+  field :end, type: Integer
  
 end
