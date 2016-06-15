@@ -13,58 +13,65 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 	
-		<!-- Custom Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-	</head>
+	<!-- Custom Fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+</head>
 
-	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-		<!-- Navigation -->
-		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand page-scroll" href="https://www.th-koeln.de/" target="_blank">
-						<%= image_tag "logo.png", :class => "t-image imagestyle1", width:"100", alt:"TH-Köln" %>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<!-- Navigation -->
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="page-scroll" href="https://www.th-koeln.de/" target="_blank">
+					<%= image_tag "logo.png", :class => "imagestyle1", width:"100", alt:"TH-Köln" %>
 
-					</a>
-				</div>
-				
+				</a>
+			</div>
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-						<ul class="nav navbar-nav">
-								<li >
-									<a href="/#">Home</a></li>
-								<li>
-								<li >
-									<a href="searchDB">SearchDB</a>
-								</li>
-								<li>
-									<a href="/#about">About</a>
-								</li>
-								<li>
-									<a  href="/#contact">Impressum</a>
-								</li>
-							</ul>
-							<form class="pull-right">
-								<a type="button" class="btn btn-default navbar-btn btn-xs" data-toggle="collapse" data-target=".navbar-main-collapse" href="/login"> 
-									LOGIN
-								</a>
-							</div>
-							<!-- /.navbar-collapse -->
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+				<ul class="nav navbar-nav">
+						<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+						<li class="hidden">
+							<a href="#page-top"></a>
+						</li>
+						<li >
+						<a href="/#">Home</a></li>
+						<li>
+							<li >
+								<a href="searchDB">SearchDB</a>
+							</li>
+							<li>
+								<a href="/#about">About</a>
+							</li>
+							<li>
+								<a  href="/#contact">Impressum</a>
+							</li>
+						</ul>
+						<form class="pull-right">
+							<a type="button" class="btn btn-default navbar-btn btn-xs" data-toggle="collapse" data-target=".navbar-main-collapse" href="/login"> 
+								LOGIN
+							</a>
 						</div>
-						<!-- /.container -->
-					</nav>
-
-					<div  style="padding-top:100px">
-						<%= yield %>
+						<!-- /.navbar-collapse -->
 					</div>
-				</body>
+					<!-- /.container -->
+				</nav>
+				<!-- Intro Header -->
+ 
 
-				<!-- Footer -->
-				<footer>
-					<div class="container text-center">
-						<p>Copyright &copy; TH Köln</p>
-					</div>
-				</footer>
+				<div  style="padding-top:150px">
+					
+				</div>
+<%= yield %>
+			</body>
 
-				</html>
+			<!-- Footer -->
+			<footer>
+				<div class="container text-center">
+					<p>Copyright &copy; TH Köln</p>
+				</div>
+			</footer>
+
+			</html>

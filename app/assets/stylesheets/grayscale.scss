@@ -117,7 +117,7 @@ a {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
             padding: 0;
-            background: black;
+            background: $backcolornav;
             border-bottom: 1px solid rgba(white, 0.3);
         }
     }
@@ -237,9 +237,9 @@ a {
     padding-top: 100px;
 }
 
-.download-section {
+.about-section {
     width: 100%;
-    padding: 50px 0;
+    padding: 20px 0;
     color: white;
     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: black;
@@ -260,7 +260,7 @@ a {
         padding-top: 250px;
     }
 
-    .download-section {
+    .about-section {
         padding: 100px 0;
     }
 
