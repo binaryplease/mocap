@@ -1,3 +1,5 @@
+@import "variables";
+
 .results tr[visible='false'],
 .no-result{
   display:none;
@@ -24,7 +26,7 @@ p{
 	flex-wrap:wrap;
 }
 .placeholder{
-	color: #c90c11;
+	color: $primary;
 	background-color: transparent;
 	-webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
