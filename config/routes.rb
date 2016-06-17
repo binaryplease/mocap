@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 	get 'contact' => "startup#contact"  
 	get 'about' => "startup#about"  
 	get 'signup' => 'users#new'
-	post 'users' => 'users#create'
+	#post 'users' => 'users#create'
 	get 'login' => 'sessions#new'
 	post 'login' => 'sessions#create'
 	delete 'logout' => 'sessions#destroy'

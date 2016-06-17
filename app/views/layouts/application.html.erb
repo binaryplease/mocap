@@ -65,6 +65,13 @@
 			style="padding-top:110px">
 		</div>
 
+		<% flash.each do |name, msg| %>
+			<div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+				<a class="close" data-dismiss="alert">&#215;</a>
+				<%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+			</div>
+		<% end %>
+
 		<%= yield %>
 
 		<!-- Footer -->
@@ -85,10 +92,10 @@ $("a.page-scroll").click(function() {
 	var pathname = window.location.pathname;
 
 	if (pathname == "/"){
-	$('html, body').stop().animate({
-		scrollTop: $($anchor.attr('href')).offset().top
-	}, 1500, 'easeInOutExpo');
-	event.preventDefault();
+		$('html, body').stop().animate({
+			scrollTop: $($anchor.attr('href')).offset().top
+		}, 1500, 'easeInOutExpo');
+		event.preventDefault();
 
 	} else {
 		window.location.replace( "/" + $anchor.attr('href'));
