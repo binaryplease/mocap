@@ -66,13 +66,6 @@
 			style="padding-top:110px">
 		</div>
 
-		<% flash.each do |name, msg| %>
-			<div class="alert alert-<%= name == :notice ? "success" : "error" %>">
-				<a class="close" data-dismiss="alert">&#215;</a>
-				<%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
-			</div>
-		<% end %>
-
 		<%= yield %>
 
 		<!-- Footer -->
@@ -81,7 +74,6 @@
 				<p>Copyright &copy; TH Köln</p>
 			</div>
 		</footer>
-<<<<<<< HEAD
 		<script type="text/javascript">
 
 
@@ -104,10 +96,8 @@ $("a.page-scroll").click(function() {
 	}
 });
 		</script>
-=======
-		
+
 		<%= javascript_include_tag 'page-scroll-annimation', 'data-turbolinks-track' => true %>
->>>>>>> 62a85a2b3972ed46c928454bcea18d9d552b0486
 
 	</body>
 </html>
