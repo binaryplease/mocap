@@ -1,5 +1,5 @@
 <% if @user.errors.any? %>
-	<div class="alert alert-danger">
+	<div class="mocap-textbox error-field">
 		<%= pluralize(@user.errors.count, "error") %>
 		<ul>
 			<% @user.errors.full_messages.each do |msg| %>
