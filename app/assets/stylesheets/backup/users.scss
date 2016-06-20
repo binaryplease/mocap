@@ -1,7 +1,8 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "variables";
+//@import "variables";
+//@import "bootstrap";
 
 #session_username, #session_password, .btn-submit, #user_username, #user_password, #user_password_confirmation {
 	background-color: $backcolor;
@@ -13,4 +14,9 @@
 	padding-bottom: 200px;
 }
 
-
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
