@@ -1,5 +1,3 @@
-@import "variables";
-
 .results tr[visible='false'],
 .no-result{
   display:none;
