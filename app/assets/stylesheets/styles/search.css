@@ -23,30 +23,30 @@ p{
 	justify-content:space-around; 
 	flex-wrap:wrap;
 }
-.placeholder{
-	color: $primary;
-	background-color: transparent;
-	-webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-	outline: none;
-	width: 150px;
-	height: auto;
-	border: 1px solid #c90c11;
-	padding: 10px;
-}
-.placeholder:hover{
-	border: 1px solid #c90c11;
-    outline: 0;
-    color: #171719;
-    background-color: #c90c11;
-}
-.placeholder:focus{
-	border: 1px solid #c90c11;
-    outline: 0;
-    color: #c90c11;
-    background-color: transparent;
-}
+/*.placeholder{*/
+	/*color: $primary;*/
+	/*background-color: transparent;*/
+	/*-webkit-transition: all .3s ease-in-out;*/
+    /*-moz-transition: all .3s ease-in-out;*/
+    /*transition: all .3s ease-in-out;*/
+	/*outline: none;*/
+	/*width: 150px;*/
+	/*height: auto;*/
+	/*border: 1px solid #c90c11;*/
+	/*padding: 10px;*/
+/*}*/
+/*.placeholder:hover{*/
+	/*border: 1px solid #c90c11;*/
+    /*outline: 0;*/
+    /*color: #171719;*/
+    /*background-color: #c90c11;*/
+/*}*/
+/*.placeholder:focus{*/
+	/*border: 1px solid #c90c11;*/
+    /*outline: 0;*/
+    /*color: #c90c11;*/
+    /*background-color: transparent;*/
+/*}*/
 .dropdown{
 	border:none;
 }
