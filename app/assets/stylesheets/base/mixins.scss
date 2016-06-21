@@ -13,6 +13,11 @@
 	padding: 10px;
 }
 
+.textbox-wrong {
+	width: 500px;
+	border: 1px solid $errors1;
+}
+
 .mocap-textbox-hov:hover {
 	border: 1px solid $primary;
 	outline: 0;
