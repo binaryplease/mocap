@@ -5,11 +5,12 @@ class UsersController < ApplicationController
 
 	def create
 		@user = User.new(user_params)
+		@user.valid?
 		if @user.save
 			session[:user_id] = @user.id
 			redirect_to '/'
 		else
-			redirect_to '/signup'
+			render '/users/new' 
 		end		
 	end
 
