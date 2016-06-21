@@ -23,6 +23,11 @@ p{
 	justify-content:space-around; 
 	flex-wrap:wrap;
 }
+/*--------------------------------------------------------------------------------------*/
+/*schau mal in die mixins.scss, da hab ich die Klassen reinkopiert und umbenannt,*/
+/*da placeholder nen bisschen irreführend war und ich auf die auch zugreifen muss.*/
+/*--------------------------------------------------------------------------------------*/
+
 /*.placeholder{*/
 	/*color: $primary;*/
 	/*background-color: transparent;*/
